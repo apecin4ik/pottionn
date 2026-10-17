@@ -1,0 +1,14 @@
+name: BafPotions
+version: 1.0.0
+main: md.baf.BafPlugin
+api-version: '1.20'
+description: Баф-зелья (Санта, Flame Ascension, Hellrush, God's Rampage, Mask of Madness, Battle Trance)
+commands:
+  ei:
+    description: Выдача баф-зелий
+    usage: /ei give <ник> <id> [кол-во]
+    aliases: [baf]
+permissions:
+  baf.admin:
+    description: Доступ к /ei give и /ei reload
+    default: op

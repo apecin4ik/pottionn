@@ -1,0 +1,85 @@
+# ВАШИ ЗЕЛЬЯ. Выдача: /ei give <ник> <id> [кол-во]
+# Эффекты: "ТИП;ТИКИ;УРОВЕНЬ"   (20 тиков = 1 сек; уровень 0 = I, 1 = II, 2 = III, 3 = IV, 4 = V)
+settings:
+  particles: false      # частицы эффектов
+  icon: false           # иконка эффекта в углу экрана
+  block-brewing: true   # запретить класть зелья в варочную стойку
+
+messages:
+  prefix: "&8[&6Баф&8] "
+  already-active: "&cУ вас уже действует баф! Подождите ещё &e%seconds% сек."
+  no-permission: "&cНет прав."
+  usage: "&eИспользование: &f/ei give <ник> <id> [кол-во] &7| &f/ei reload"
+  player-not-found: "&cИгрок не найден."
+  item-not-found: "&cТакого баффа нет. Доступные: &f%list%"
+  given: "&aВыдано &f%amount% &aшт. &f%item% &aигроку &f%player%"
+  received: "&aВы получили баф-зелье."
+  reloaded: "&aКонфиг перезагружен. Баффов: &f%count%"
+
+items:
+  baf_sanata:
+    material: POTION
+    name: '&b❄ &4&lПодарок &f&lСанты &b❄'
+    lore: []
+    glow: false
+    hide-effects: false
+    effects:
+      - "resistance;500;3"
+      - "speed;600;2"
+
+  Flame_Ascension:
+    material: POTION
+    name: '&#5453C5&lFl&#504CC2&lam&#4B46BF&le &#473FBC&lAs&#4238B9&lce&#3E31B6&lns&#392BB3&lio&#392BB3&ln'
+    lore: []
+    color: "0000FF"
+    glow: true
+    hide-effects: true
+    effects:
+      - "regeneration;1200;2"
+      - "health_boost;1200;2"
+      - "fire_resistance;9600;0"
+
+  Gods_Rampage:
+    material: POTION
+    name: '&#FB222B&lGo&#F4254D&ld’&#ED286F&ls &#E62B92&lRa&#DF2EB4&lmp&#D831D6&lag&#D831D6&le'
+    lore: []
+    glow: true
+    hide-effects: true
+    effects:
+      - "speed;800;4"
+      - "strength;800;4"
+      - "fire_resistance;900;0"
+
+  Hellrush:
+    material: POTION
+    name: '&#7F986C&lH&#6F856F&le&#607171&ll&#505E74&ll&#404A77&lr&#30377A&lu&#21237C&ls&#11107F&lh'
+    lore: []
+    glow: true
+    hide-effects: true
+    effects:
+      - "speed;1200;3"
+      - "strength;1200;3"
+      - "fire_resistance;2400;0"
+
+  Mask_of_Madness:
+    material: POTION
+    name: '&#D01414&lMa&#B51413&lsk&#9B1512&l o&#801511&lf &#661510&lMa&#4B150F&ldn&#31160E&les&#31160E&ls'
+    lore: []
+    glow: true
+    hide-effects: true
+    effects:
+      - "resistance;400;3"
+      - "strength;400;3"
+      - "haste;900;3"
+
+  pottion:   # Battle Trance (id оставлен как в вашем меню)
+    material: POTION
+    name: '&#983BC8&lB&#8C40BE&la&#7F46B4&lt&#734BAA&lt&#67509F&ll&#5A5695&le &#426081&lT&#356677&lr&#296B6D&la&#1D7062&ln&#107658&lc&#047B4E&le'
+    lore: []
+    color: "000014"
+    glow: true
+    hide-effects: true
+    effects:
+      - "speed;1600;2"
+      - "strength;1600;2"
+      - "fire_resistance;2400;0"
